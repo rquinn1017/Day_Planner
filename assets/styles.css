@@ -38,11 +38,18 @@
 
 }
 
+.col{
+    max-width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .times{
 
     grid-area: time;
     display: grid;
-    grid-template-rows: repeat(24, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     font-size: 14px;
     background-color: #f7f7f7;
     border-left: 1px solid rgba(0, 0, 0, 0.25);
@@ -61,7 +68,7 @@
 
     grid-area: contents;
     display: grid;
-    grid-template-rows: repeat(24, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     border-right: 1px solid rgba(0, 0, 0, 0.25);
     grid-auto-flow: column;
 }
