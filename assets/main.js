@@ -7,9 +7,9 @@ $(document).ready(function() {
     text
     ();
 
-    var dt = moment(row, ["h"]).format("H:mm:ss A");
+    var rowTime = moment(row, ["h"]).format("H:mm:ss A");
 
-    console.log(dt);
+    console.log(rowTime);
     // console.log(moment(row, 'LT').format());
 
     // function getMomentFromTimeString(row) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
     // }
     // var time = moment(row);
     // moment().toDate(row);
-console.log(row);
+// console.log(row);
     var currentDate = moment().format("dddd, MMM Do YYYY");
     $("#today" ).text
     ( currentDate );
@@ -37,6 +37,15 @@ console.log(row);
 //       });
       
 //       });
+
+// var loop = $( ".row" ).each(function( index ) {
+//     console.log( index + ": " + $( this ).text() );
+//   });
+
+$( ".row" ).each(function( index ) {
+  var time = ($( this ).text() );
+  console.log(moment(time,["h"]).format("H:mm:ss A"));
+  });
 
 })
 
