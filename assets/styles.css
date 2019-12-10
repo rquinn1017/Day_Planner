@@ -92,7 +92,13 @@
     margin-right: 0px;
 }
 
+body{    
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/herringbone.png");
+}
 
+.calendar{
+background: white;
+}
 /* .save {
     color: #99b1ff;
 } */
