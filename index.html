@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
+    <title>Day Planner</title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+  </head>
 
-  <title>Day Planner</title>
-
-  <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
-</head>
-
-<body>
-
-  <!-- Start Nav -->
-   <div  class = "nav-wrapper">
-      <div class= "container-fluid">
-          <nav class="navbar navbar-expand-md navbar-light bg-light">
-             <span class="navbar-brand mb-1 h1">Day Planner</span> 
-          </nav>
-        </div>
+  <body>
+    <!-- Start Nav -->
+    <div class="nav-wrapper">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <span class="navbar-brand mb-1 h1">Day Planner</span>
+        </nav>
+      </div>
     </div>
 
+    <!-- End Nav -->
 
-  <!-- End Nav -->
-  
-  <!-- Start main container    -->
+    <!-- Start main container    -->
     <div class="calendar-container">
-      <h2 class = "date"></h2>
+      <h2 class="date"></h2>
       <div class="calendar">
-        <div class ="empty"></div>
-        <div class = "column">
-          <div class = "col col-1" id= "today"></div>
-          <div class = "col col-2" id= "save"></div>
+        <div class="empty"></div>
+        <div class="column">
+          <div class="col col-1" id="today"></div>
+          <div class="col col-2" id="save"></div>
         </div>
-        <div class = "times">
+        <div class="times">
           <div class="row row-1">9 AM</div>
           <div class="row row-2">10 AM</div>
           <div class="row row-3">11 AM</div>
@@ -47,59 +49,58 @@
           <div class="row row-7">3 PM</div>
           <div class="row row-8">4 PM</div>
           <div class="row row-9">5 PM</div>
+        </div>
+        <div class="content">
+          <div id="1" class="details details-1" contenteditable="true"></div>
+          <div id="2" class="details details-2" contenteditable="true"></div>
+          <div id="3" class="details details-3" contenteditable="true"></div>
+          <div id="4" class="details details-4" contenteditable="true"></div>
+          <div id="5" class="details details-5" contenteditable="true"></div>
+          <div id="6" class="details details-6" contenteditable="true"></div>
+          <div id="7" class="details details-7" contenteditable="true"></div>
+          <div id="8" class="details details-8" contenteditable="true"></div>
+          <div id="9" class="details-details-9" contenteditable="true"></div>
+          <div id="10" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="11" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="12" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="13" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="14" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="15" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="16" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="17" class="save"><i class="far fa-save fa-2x"></i></div>
+          <div id="18" class="save"><i class="far fa-save fa-2x"></i></div>
+        </div>
       </div>
-      <div class="content">
-<div id="1" class = "details details-1" ></div>
-<div id="2" class = "details details-2"></div>
-<div id="3" class = "details details-3"></div>
-<div id="4" class = "details details-4"></div>
-<div id="5" class = "details details-5"></div>
-<div id="6" class = "details details-6"></div>
-<div id="7" class = "details details-7"></div>
-<div id="8" class = "details details-8"></div>
-<div id="9" class = "details-details-9"></div>
-<div id="10" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="11" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="12" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="13" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="14" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="15" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="16" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="17" class = "save"><i class="far fa-save fa-2x"></i></div>
-<div id="18" class = "save"><i class="far fa-save fa-2x"></i></div>
-      </div>
-  </div>
     </div>
-    
 
+    <!-- End main container -->
 
-<!-- End main container -->
-
-<!-- Start footer -->
-  <footer class ="footer">
+    <!-- Start footer -->
+    <footer class="footer">
       <div>
-        Copyright &copy; 
+        Copyright &copy;
       </div>
     </footer>
-    
-<!-- End footer -->
 
-  <!-- jQuery CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- End footer -->
 
-  <!-- Bootstrap JavaScript CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- Bootstrap JavaScript CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-<!--FontAwesome CDN-->
-  <script src="https://kit.fontawesome.com/7b4d2fea99.js" crossorigin="anonymous"></script>
+    <!--FontAwesome CDN-->
+    <script
+      src="https://kit.fontawesome.com/7b4d2fea99.js"
+      crossorigin="anonymous"
+    ></script>
 
-<!--MomentJs CDN-->  
-  <script src="https://momentjs.com/downloads/moment.js"></script>
-<script>
-    moment().format();
-</script>
- <script src="assets/main.js"></script>
-</body>
-
+    <!--MomentJs CDN-->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script>
+      moment().format();
+    </script>
+    <script src="assets/main.js"></script>
+  </body>
 </html>

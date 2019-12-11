@@ -1,8 +1,8 @@
 
 var currHour = moment().format('HH');
-// var currHour = 15
+var currHour = 15
 
-console.log(currHour);
+// console.log(currHour);
 
 $(document).ready(function() {
 
@@ -16,7 +16,7 @@ $( ".row" ).each(function( index ) {
   var time = ($( this ).text() );
   time= (moment(time,["hA"]).format("HH"));
   loop = loop + 1
- console.log(loop);
+//  console.log(loop);
 
   if (time < currHour) 
   $("#"+loop).css('background-color', '#ffb2b2');
@@ -27,7 +27,7 @@ $( ".row" ).each(function( index ) {
   else if (time == currHour) 
   $("#"+loop).css('background-color', '#cccccc');
 
-  console.log(time);
+  // console.log(time);
 
   });
 
