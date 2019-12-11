@@ -19,13 +19,13 @@ $( ".row" ).each(function( index ) {
  console.log(loop);
 
   if (time < currHour) 
-  $("#"+loop).css('background-color', 'red');
+  $("#"+loop).css('background-color', '#ffb2b2');
 
   else if (time > currHour) 
-  $("#"+loop).css('background-color', 'green');
+  $("#"+loop).css('background-color', '#b2d8b2');
 
   else if (time == currHour) 
-  $("#"+loop).css('background-color', 'grey');
+  $("#"+loop).css('background-color', '#cccccc');
 
   console.log(time);
 
