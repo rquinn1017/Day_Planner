@@ -34,12 +34,36 @@ $( ".row" ).each(function( index ) {
     var row = $("#" + this.id);
     var rowNum = $(row).attr('id');
     var noteText = $("#"+rowNum).html();
-    localStorage.setItem("note "+rowNum, noteText);
+    localStorage.setItem("details-"+rowNum, noteText);
+  })
 
-  }
-  
-  )
-  
+
+var storage = Object.entries(localStorage);
+console.log(storage);
+
+var details1 = (localStorage.getItem("details-1")) || [];
+var details2 = (localStorage.getItem("details-2")) || [];
+var details3 = (localStorage.getItem("details-3")) || [];
+var details4 = (localStorage.getItem("details-4")) || [];
+var details5 = (localStorage.getItem("details-5")) || [];
+var details6 = (localStorage.getItem("details-6")) || [];
+var details7 = (localStorage.getItem("details-7")) || [];
+var details8 = (localStorage.getItem("details-8")) || [];
+var details9 = (localStorage.getItem("details-9")) || [];
+
+
+$(".details-1").html(details1);
+$(".details-2").html(details2);
+$(".details-3").html(details3);
+$(".details-4").html(details4);
+$(".details-5").html(details5);
+$(".details-6").html(details6);
+$(".details-7").html(details7);
+$(".details-8").html(details8);
+$(".details-9").html(details9);
+
+console.log(details9);
+
   
 });
 
