@@ -1,5 +1,6 @@
 
 var currHour = moment().format('HH');
+// var currHour = 15
 
 console.log(currHour);
 
@@ -10,26 +11,27 @@ $(document).ready(function() {
     $("#today" ).text
     ( currentDate );
 
+ var loop = 0
 $( ".row" ).each(function( index ) {
   var time = ($( this ).text() );
   time= (moment(time,["hA"]).format("HH"));
-  
- 
-  
-  console.log(time);
-
+  loop = loop + 1
+ console.log(loop);
 
   if (time < currHour) 
-  $(".details").css('background-color', 'red');
+  $("#"+loop).css('background-color', 'red');
 
-  else if (time > currHour) console.log("green")
+  else if (time > currHour) 
+  $("#"+loop).css('background-color', 'green');
 
-  else if (time === currHour) console.log('grey')
+  else if (time == currHour) 
+  $("#"+loop).css('background-color', 'grey');
 
-  
+  console.log(time);
+
   });
 
 
-})
+});
 
 
