@@ -1,104 +1,133 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
-.calendar{
-    display: grid;
-    grid-template-areas:
+.nav-wrapper {
+  background-color: #666666;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-size: 32px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-areas:
     "empty column"
     "time contents";
-    grid-template-columns: 120px;
-    grid-template-rows: 60px;
-    width: 95vh;
-    height: 95vh;
-    margin: 0 auto;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.20);
+  grid-template-columns: 120px;
+  grid-template-rows: 60px;
+  width: 95vh;
+  height: 95vh;
+  margin: 0 auto;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
-.empty{
-
-    display: grid;
-    grid-area: empty;
-    border-top: 1px solid rgba(0, 0, 0, 0.25);
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+.empty {
+  display: grid;
+  grid-area: empty;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.column{
-
-    grid-area: column;
-    display: grid;
-    grid-template-columns: [row1-start] 90% [row1-end row2-start] 10% [row2-end];
-    text-transform: uppercase;
-    font-size: 12px;
-    background-color: #e4f1fd;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-
+.column {
+  grid-area: column;
+  display: grid;
+  grid-template-columns: [row1-start] 90% [row1-end row2-start] 10% [row2-end];
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #9dccf8;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
 }
 
-.col{
-    max-width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    padding-top: 15px;
+.empty {
+  background-color: #9dccf8;
+  border-bottom: 0px;
 }
 
-.times{
+.col {
+  max-width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+}
 
-    grid-area: time;
-    display: grid;
-    grid-template-rows: repeat(9, 1fr);
-    font-size: 14px;
-    background-color: #f7f7f7;
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
+.times {
+  grid-area: time;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .times > div {
-
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .content {
-
-    grid-area: contents;
-    display: grid;
-    grid-template-rows: repeat(9, 1fr);
-    grid-template-columns: [row1-start] 90% [row1-end row2-start] 10% [row2-end];
-    border-right: 1px solid rgba(0, 0, 0, 0.25);
-    grid-auto-flow: column;
+  grid-area: contents;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: [row1-start] 90% [row1-end row2-start] 10% [row2-end];
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+  grid-auto-flow: column;
 }
 
 .content > div {
-
-    border-left: 1px solid rgba(0, 0, 0, 0.25);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 .save {
-    text-align: center;
-   padding-top: 20px;
-   background-color: #e4f1fd;
+  text-align: center;
+  padding-top: 20px;
+  background-color: #9dccf8;
 }
 
 .row {
-    margin-left: 0px;
-    margin-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-body{    
-    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/herringbone.png");
+body {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/herringbone.png");
 }
 
-.calendar{
-background: white;
+.calendar {
+  background: white;
 }
-/* .save {
-    color: #99b1ff;
-} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #666666;
+  color: #999999;
+  height: 50px;
+  border-top: 8px solid #9dccf8;
+  line-height: 60px;
+  font-size: small;
+}
