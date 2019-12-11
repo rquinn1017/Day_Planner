@@ -30,8 +30,26 @@ $( ".row" ).each(function( index ) {
   // console.log(time);
 
   });
+  $('.save').hover(function() {
+    $(this).css('cursor','pointer');
+  })
 
+  $('.save').click(function(){
+    var rowNum = $("#" + this.id);
+  console.log(rowNum);
+  //   var noteText = $(".details-"+rowNum).attr("text");
+  //   localStorage.setItem("Note"+rowNum, noteText);
+  //   console.log(noteText)
+  }
+  
+  )
+  //need to add event listener for click in the details box and set the number of the row 
+  
+  
+  // $('.save').click(function() {
+  //   localStorage.setItem("mostRecentScore", score);
 
+  
 });
 
 
