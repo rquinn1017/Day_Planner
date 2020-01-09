@@ -11,3 +11,5 @@ Based on the the current time the calender rows for each timeslot will become co
 The user is able to click into any of the boxes in the middle column and enter notes. If the user clicks the save icon on that row, the data for that row will be sent to local storage.
 
 When the page is reloaded all of the notes for each row will be displayed on the screen from local storage.
+
+Deployed Website: https://rquinn1017.github.io/Day_Planner/
